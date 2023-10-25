@@ -32,11 +32,11 @@ My goals for creating this app is simply to challenge myself and prove that I ca
 - [Github Code for Firebase Task Manager app](https://github.com/FirebaseExtended/make-it-so-android.git)
 - [Firebase Setup Page](https://firebase.google.com/)
 - [Firebase Console Page](https://console.firebase.google.com/)
+- [Getting Started with Firebase on Android](https://www.youtube.com/watch?v=jbHfJpoOzkI&t=195s)
 - [Web Site Name](http://url.link.goes.here)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
 
 - Item 1
 - Item 2
