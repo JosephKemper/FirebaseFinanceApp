@@ -10,19 +10,102 @@ My goals for creating this app is simply to challenge myself and prove that I ca
 
 # Cloud Database
 
-{Describe the cloud database you are using.}
-
-{Describe the structure of the database that you created.}
+For my database, I am using Google Firebase. In addition to storing the data, I am using Firebase for login authentication. 
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+Android Studio Giraffe | 2022.3.1 Patch 2
+Kotlin
+## Project Level Plugins
+- com.android.application version 8.1.2
+- com.android.library version 8.1.2
+- org.jetbrains.kotlin.android version 1.9.0
+- com.google.devtools.ksp version 1.9.0-1.0.11
+- com.google.dagger.hilt.android version 2.47
+- com.google.gms.google-services version 4.4.0
+- com.google.firebase.crashlytics version 2.9.9
+- com.google.firebase.firebase-perf version 1.4.2
 
-{Describe the programming language that you used and any libraries.}
+## App Level Plugins
+- com.android.application (default version)
+- org.jetbrains.kotlin.android (default version)
+  com.google.devtools.ksp (default version)
+  com.google.gms.google-services (default version)
+  com.google.firebase.crashlytics (default version)
+  com.google.firebase.firebase-perf (default version)
+  dagger.hilt.android.plugin (default version)
+  com.ncorti.ktfmt.gradle version "0.10.0"
+
+## Dependencies
+### Core libraries
+- androidx.core:core-ktx:1.9.0
+- androidx.appcompat:appcompat:1.6.1")
+- com.google.android.material:material:1.10.0")
+
+### Compose and UI libraries
+- compose:compose-bom:2023.10.00
+- androidx.compose.ui:ui
+- androidx.compose.material:material
+- androidx.compose.ui:ui-tooling-preview
+- androidx.compose.material:material-icons-extended:1.5.3
+- androidx.compose.ui:ui-graphics
+- androidx.compose.material3:material3:1.1.2
+
+### Lifecycle and Activity libraries
+- androidx.lifecycle:lifecycle-runtime-compose:2.6.2
+- androidx.lifecycle:lifecycle-runtime-ktx:2.6.2
+- androidx.activity:activity-compose:1.8.0
+
+### Navigation and Preference libraries
+- androidx.navigation:navigation-compose:2.7.4
+- androidx.hilt:hilt-navigation-compose:1.0.0
+- androidx.preference:preference-ktx:1.2.1
+
+### Coroutines and Permissions libraries
+- org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.4
+- com.google.accompanist:accompanist-permissions:0.30.1
+
+### Dagger Hilt libraries
+- com.google.dagger:hilt-android:2.47
+- com.google.dagger:hilt-compiler:2.47
+
+### Firebase libraries
+- com.google.firebase:firebase-bom:32.3.1
+- com.google.firebase:firebase-analytics-ktx
+- com.google.firebase:firebase-crashlytics-ktx
+- com.google.firebase:firebase-auth-ktx
+- com.google.firebase:firebase-firestore-ktx
+- com.google.firebase:firebase-perf-ktx
+- com.google.firebase:firebase-config-ktx
+- com.google.firebase:firebase-messaging-ktx
+
+### Test libraries
+- junit:junit:4.+
+- androidx.test.ext:junit:1.1.5
+- androidx.compose.ui:ui-test-junit4
+
+### Dagger Hilt testing library
+- com.google.dagger:hilt-android-testing:2.43.2
+
+### Truth library for fluent testing
+- com.google.truth:truth:1.1.3
+
+### Dagger Hilt compiler for Android tests
+- com.google.dagger:hilt-compiler:2.47
+
+### Debugging libraries
+- androidx.compose.ui:ui-tooling
+- androidx.compose.ui:ui-test-manifest
+
+## Other Requirements
+- compileSdk = 34
+- minSdk= 21
+  targetSdk = 34
+- sourceCompatibility = JavaVersion.VERSION_17
+  targetCompatibility = JavaVersion.VERSION_17
+-  kotlinCompilerExtensionVersion = 1.5.0
 
 # Useful Websites
-
-{Make a list of websites that you found helpful in this project}
 
 - [Build an Android app with Firebase and Jetpack Compose](https://firebase.google.com/codelabs/build-android-app-with-firebase-compose?hl=en#0)
 - [Jetpack Compose Intro](https://developer.android.com/jetpack/compose)
@@ -36,8 +119,17 @@ My goals for creating this app is simply to challenge myself and prove that I ca
 - [Web Site Name](http://url.link.goes.here)
 
 # Future Work
+## Minimum Viable Product
 
+- Add expenses
+- Add income
+- Calculate total
+- View transactions
+- Login options
+- Maintain data
+- Delete data
 
-- Item 1
-- Item 2
-- Item 3
+## Extra features
+- Multiple accounts
+- Reports to track data
+- Pattern analysis
