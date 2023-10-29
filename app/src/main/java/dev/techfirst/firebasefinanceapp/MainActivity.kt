@@ -4,10 +4,13 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material.TextField
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import dev.techfirst.firebasefinanceapp.ui.theme.FirebaseFinanceAppTheme
@@ -38,7 +41,11 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    println("Android")
+                    // Display the transaction amount text input field
+                    TransactionAmountTextField("")
+
+                    // Display the transaction description text input field
+                    TransactionDescriptionTextField("")
                 }
             }
         }
@@ -93,4 +100,28 @@ fun processTransaction(transactionAmountAsString: String, rawDate: String, descr
     val transaction = TransactionData (transactionAmount, date, description, isDeposit)
     // add transaction to list
     transactionList.add(transaction)
+}
+
+// A text field to let user enter transaction amount
+@Composable
+fun TransactionAmountTextField(transactionAmount: String) {
+    var transactionAmount by remember { mutableStateOf(transactionAmount) }
+
+    TextField(
+        value = transactionAmount,
+        onValueChange = {newTransactionAmount -> transactionAmount = newTransactionAmount },
+        label = "Transaction Amount"
+    )
+}
+
+// A text field to let the user enter transaction description
+@Composable
+fun TransactionDescriptionTextField(transactionDescription: String) {
+    var transactionDescription by remember { mutableStateOf(transactionDescription) }
+
+    TextField(
+        value = transactionDescription,
+        onValueChange = { newTransactionDescription -> transactionDescription = newTransactionDescription },
+        label = "Transaction Description"
+    )
 }
