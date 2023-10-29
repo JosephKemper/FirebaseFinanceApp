@@ -109,7 +109,7 @@ fun TransactionAmountTextField(transactionAmount: String) {
 
     TextField(
         value = transactionAmount,
-        onValueChange = {newTransactionAmount -> transactionAmount = newTransactionAmount },
+        onValueChange = {newTransactionAmount: String -> transactionAmount = newTransactionAmount },
         label = "Transaction Amount"
     )
 }
@@ -121,7 +121,7 @@ fun TransactionDescriptionTextField(transactionDescription: String) {
 
     TextField(
         value = transactionDescription,
-        onValueChange = { newTransactionDescription -> transactionDescription = newTransactionDescription },
+        onValueChange = { newTransactionDescription: String -> transactionDescription = newTransactionDescription },
         label = "Transaction Description"
     )
 }

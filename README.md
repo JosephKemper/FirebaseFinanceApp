@@ -6,7 +6,7 @@ In this project, I plan to build a simple app that will demonstrate my ability t
 My goals for creating this app is simply to challenge myself and prove that I can become a mobile developer. 
 
 
-[Software Demo Video -- Coming 28 October 2023](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/ATb2psXYkJU)
 
 # Cloud Database
 
