@@ -1,6 +1,5 @@
 # Overview
 
-{description of the software, how it integrates with a Cloud Database, and how to use program}
 In this project, I plan to build a simple app that will demonstrate my ability to lean new skills and technologies. I specifically plan to build a simple financial management app that will use Google Firebase, Jetpack Compose, and Kotlin. The app will let you track income and expenses, and create budgets.    
 
 My goals for creating this app is simply to challenge myself and prove that I can become a mobile developer. 
